@@ -1,3 +1,7 @@
+pipeline {
+  agent any
+
+
 const express = require('express');
 const app = express();
 
@@ -35,3 +39,5 @@ function App() {
 }
 
 export default App;
+
+}
