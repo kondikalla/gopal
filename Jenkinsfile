@@ -7,7 +7,7 @@ pipeline {
         
     stage('Git') {
       steps {
-        git 'https://github.com/kondikalla/gopal.git'
+        git clone 'https://github.com/kondikalla/gopal.git'
       }
     }
      
