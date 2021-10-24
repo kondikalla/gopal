@@ -7,7 +7,7 @@ pipeline {
         
     stage('Git') {
       steps {
-        git 'https://github.com/kondikalla/gopal.git'
+        git branch: 'main', credentialsId: '35afb89b-2640-474e-92fc-204043a83dde', url: 'https://github.com/kondikalla/gopal.git'
       }
     }
      
