@@ -10,16 +10,7 @@ pipeline {
         git branch: 'main', credentialsId: '35afb89b-2640-474e-92fc-204043a83dde', url: 'https://github.com/kondikalla/gopal.git'
       }
     }
-
-    stage("foo") {
-            steps {
-                script {
-                    env.FILENAME = readFile 'output.txt'
-                }
-                echo "${env.FILENAME}"
-            }	
-	  }
-     
+ 
     stage('Build') {
       steps {
         sh 'npm install'
