@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <h1>My frentend</h1>
+      <h1>My-frontend</h1>
       <h3>Hello {userName}</h3>
     </>
 );
