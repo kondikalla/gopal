@@ -1,12 +1,8 @@
-pipeline {
-  agent any 
-  stages {
-        
-    stage('Git') {
+node {
+  stage('git clone') 
       steps {
         git branch: 'main', credentialsId: '35afb89b-2640-474e-92fc-204043a83dde', url: 'https://github.com/kondikalla/gopal.git'
       }
-    }
  
     stage('Build') {
       steps {
@@ -21,7 +17,5 @@ pipeline {
         sh 'node test'
       }
     }
-  }
-}
-
+ }
 
