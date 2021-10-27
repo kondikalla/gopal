@@ -8,7 +8,7 @@ node {
     }	
     stage('Test') {
             steps {
-                sh "chmod +x -R ${./var/lib/jenkins/workspace/React-app/jenkins/scripts}"
+                sh './var/lib/jenkins/workspace/React-app/jenkins/scripts/test.sh'
             }
         }
         stage('Deliver') { 
